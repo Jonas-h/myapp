@@ -1,0 +1,235 @@
+html{
+	font-size: 20px;
+}
+// 头部
+header{
+	width: 16rem;
+	height:2.225rem;
+	background:#d70302;
+	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	border-bottom:.1rem solid #bfafba;
+	h1{
+		width: 5.3rem;
+		height:1.625rem;
+		background:url(../img/logo.png) no-repeat;
+		background-size:5.3rem 1.625rem;
+		margin-left:.8rem;
+	}
+	p{
+		margin-right: 1.65rem;
+		font-size: .725rem;
+		a{
+			color: #fff;
+		}
+	}
+}
+// 主体
+section{
+	// 导航栏
+	.nav{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width:16rem;
+		height:1.65rem;
+		ul{
+			display: flex;
+			justify-content:center;
+  			align-items: center;
+  			box-sizing:border-box;
+  			width:16rem;
+			heigth:1.2rem;
+  			.active{
+				border:.05rem solid #c7110d;
+				background: #fef2f2;
+				a{
+					color:#7c422e;
+				}
+			}
+			li{
+				width:3rem;
+				height:1.2rem;
+				a{
+					display: flex;
+					justify-content:center;
+					width:3rem;
+					height:1.2rem;
+					font-size:.75rem;
+					text-align:center;
+					line-height: 1.2rem;
+				}
+			}
+		}
+	}
+	// 轮播图
+	.swiper-container{
+		width:16rem;
+		height:8rem;
+		border-bottom:.35rem solid #9a9a9a;
+		.swiper-wrapper div:nth-child(1) a{
+			display:block;
+			width:100%;
+			height:8rem;
+			background:url(../img/0.jpg) no-repeat;
+			background-size: 16rem 8rem;
+		}
+		.swiper-wrapper div:nth-child(2) a{
+			display:block;
+			width:100%;
+			height:8rem;
+			background:url(../img/1.jpg) no-repeat;
+			background-size: 16rem 8rem;
+		}
+		.swiper-wrapper div:nth-child(3) a{
+			display:block;
+			width:100%;
+			height:8rem;
+			background:url(../img/2.jpg) no-repeat;
+			background-size: 16rem 8rem;
+		}
+	}
+	// 列表1
+	.lest{
+		width:16rem;
+		ul{
+			width:100%;
+			.on{
+				overflow: hidden;
+				border-bottom: .025rem solid #ccc;
+				a{
+					display: block;
+					color: #89181a;
+					font-size: .8rem;
+					font-weight: bold;
+					line-height: 1.5rem;
+					margin: .95rem 0 .825rem .525rem;
+				}
+				span{
+					margin-left: .725rem;
+					float: left;
+					font-size: .65rem;
+					color: #aaa;
+					margin-bottom: .65rem;
+				}
+				p{
+					width: 1.475rem;
+					height: .85rem;
+					color: #aaa;
+					float: right;
+					font-size: .5rem;
+					margin-right: 1rem;
+					background:url(../img/tubiao.png) .6rem 0 no-repeat;
+					background-size: .85rem .875rem;
+				}
+			}
+			li{
+				overflow: hidden;
+				border-bottom: .025rem solid #ccc;
+				a{
+					line-height: 1.5rem;
+					display: block;
+					font-size: .8rem;
+					font-weight: bold;
+					margin: .95rem 0 .825rem .525rem;
+				}
+				span{
+					margin-left: .725rem;
+					float: left;
+					font-size: .65rem;
+					color: #aaa;
+					margin-bottom: .65rem;
+				}
+				p{
+					width: 1.475rem;
+					height: .85rem;
+					color: #aaa;
+					float: right;
+					font-size: .5rem;
+					margin-right: 1rem;
+					background:url(../img/tubiao.png) .6rem 0 no-repeat;
+					background-size: .85rem .875rem;
+				}
+			}
+		}
+	}
+	// 图文
+	.img_text{
+		display: flex;
+		width: 16rem;
+		.pla_one{
+			margin-top: 1.525rem;
+			margin-left:1.1rem;
+			width: 6rem;
+			.picture{
+				width: 6rem;
+				height: 4.475rem;
+				background:url(../img/apple.png) no-repeat;
+				background-size: 6rem 4.475rem;
+			}
+			.describe{
+				font-size: .625rem;
+				text-align: center;
+				a{
+					line-height: 1.375rem;
+				}
+			}
+		}
+		.pla_two{
+			margin-top: 1.525rem;
+			margin-left:1.1rem;
+			width: 6rem;
+			.picture{
+				width: 6rem;
+				height: 4.475rem;
+				background:url(../img/east.png) no-repeat;
+				background-size: 6rem 4.475rem;
+			}
+			.describe{
+				font-size: .625rem;
+				text-align: center;
+				a{
+					line-height: 1.375rem;
+				}
+			}
+		}
+	}
+	// 列表2样式同列表1
+	// 下一页
+	.filp{
+		width:16rem;
+		height: 2.15rem;
+		font-size: .75rem;
+		text-align: center;
+		line-height: 1.575rem;
+		border-bottom: .025rem solid #ccc;
+	}
+}
+// 尾部
+footer{
+	.foot{
+		background: #eee;
+		width: 16rem;
+		height: 4rem;
+		ul{
+			padding: .9rem 0 0 3.75rem;
+			overflow: hidden;
+			height: .75rem;
+			width: 8.525rem;
+			li{
+				font-size: .75rem;
+				float: left;
+				a{
+					color: #454545;
+				}
+			}
+		}
+		p{
+			overflow: hidden;
+			font-size: .575rem;
+			color: #696969;
+			margin:1rem 0 0 1.05rem;
+		}
+	}
+}
